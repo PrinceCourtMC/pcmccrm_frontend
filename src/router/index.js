@@ -14,6 +14,26 @@ const router = createRouter({
                     component: () => import('@/views/Dashboard.vue')
                 },
                 {
+                    path: '/uikit/inbox',
+                    name: 'inbox',
+                    component: () => import('@/views/uikit/Inbox.vue')
+                },
+                {
+                    path: '/uikit/ticket',
+                    name: 'ticket',
+                    component: () => import('@/views/uikit/Ticket.vue')
+                },
+                {
+                    path: '/auth/whatsappTemplate',
+                    name: 'whatsappTemplate',
+                    component: () => import('@/views/pages/auth/WhatsappTemplate.vue')
+                },
+                {
+                    path: '/auth/formTemplate',
+                    name: 'formTemplate',
+                    component: () => import('@/views/pages/auth/FormTemplate.vue')
+                },
+                {
                     path: '/uikit/hsclist',
                     name: 'hsclist',
                     component: () => import('@/views/uikit/HSCList.vue')

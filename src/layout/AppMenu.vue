@@ -6,11 +6,29 @@ import AppMenuItem from './AppMenuItem.vue';
 const model = ref([
     {
         label: 'Home',
-        items: [{ label: 'Overview', icon: 'pi pi-fw pi-chart-pie', to: '/' }]
+        items: [{ label: 'Overview Dashboard', icon: 'pi pi-fw pi-chart-pie', to: '/' }]
     },
     {
         label: 'CRM TICKETING SYSTEM',
         items: [
+            { label: 'Inbox', icon: 'pi pi-fw pi-envelope', to: '/uikit/inbox' },
+            { label: 'Ticket', icon: 'pi pi-fw pi-ticket', to: '/uikit/ticket' },
+            {
+                label: 'Settings',
+                icon: 'pi pi-fw pi-cog',
+                items: [
+                    {
+                        label: 'Whatsapp Template',
+                        icon: 'pi pi-fw pi-whatsapp',
+                        to: '/auth/whatsappTemplate'
+                    },
+                    {
+                        label: 'Form Template',
+                        icon: 'pi pi-fw pi-stop',
+                        to: '/auth/formTemplate'
+                    }
+                ]
+            },
             { label: 'HSC List', icon: 'pi pi-fw pi-table', to: '/uikit/hsclist' },
             { label: 'Form Layout', icon: 'pi pi-fw pi-id-card', to: '/uikit/formlayout' },
             { label: 'Input', icon: 'pi pi-fw pi-check-square', to: '/uikit/input' },
